@@ -44,7 +44,7 @@ int main()
     char choice;
     while (1)
     {
-        printf("\n\n---------------- Welcome to Compiler Gamings -------------------\n\n");
+        printf("\n\n-------------------------------- Welcome to Compiler Gamings -------------------------------------\n\n");
         printf("Press 1 to Play SNAKE\n");
         printf("Press 2 to Play TIC-TAC-TOE\n");
         printf("\nEnter your Choice :: ");
