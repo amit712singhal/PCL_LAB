@@ -1,11 +1,11 @@
-/* ---------------------------------------------------------- SOURCE_CODE --------------------------------------------------------*/
+/*----------------------------------------- SOURCE_CODE --------------------------------------*/
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 #include <termios.h>
 
-/* ---------------------------------------------------------- snake_game ---------------------------------------------------------*/
+/*----------------------------------------- Snake_Game ---------------------------------------*/
 
 int i, j, height = 35, width = 35;
 int gameover, score;
@@ -23,7 +23,7 @@ void add_segment();
 void input();
 void logic();
 
-/* -------------------------------------------------------  tic-tac-toe_game -------------------------------------------------------*/
+/*--------------------------------------- Tic-Tac-Toe_Game -----------------------------------*/
 
 const int N = 3;
 
@@ -36,7 +36,7 @@ int win(int a[N][N], int player);
 int set(int a[N][N], int m, int n, int player);
 void display(int a[N][N]);
 
-/* ----------------------------------------------------------- driver_code ---------------------------------------------------------*/
+/*----------------------------------------- Driver_Code --------------------------------------*/
 
 int main()
 {
@@ -44,7 +44,7 @@ int main()
     char choice;
     while (1)
     {
-        printf("\n\n---------------------------------------------------- Welcome to Compiler Gamings ----------------------------------------------------\n\n");
+        printf("\n\n---------------- Welcome to Compiler Gamings -------------------\n\n");
         printf("Press 1 to Play SNAKE\n");
         printf("Press 2 to Play TIC-TAC-TOE\n");
         printf("\nEnter your Choice :: ");
@@ -96,9 +96,10 @@ exit:
     return 0;
 }
 
-/* ------------------------------------------------ functions definations for snake_game -------------------------------------------*/
+/*------------------------------------- Snake_Game_FUNCTIONS ---------------------------------*/
 
 // function to draw the snake game boundary
+
 void dr_boundary()
 {
     system("clear");
@@ -143,6 +144,7 @@ void dr_boundary()
 }
 
 // function to generate fruit within the boundary
+
 void setup()
 {
     gameover = 0;
@@ -165,6 +167,7 @@ label2:
 }
 
 // function to increase snake length
+
 void add_segment()
 {
     struct Node *new_segment = (struct Node *)malloc(sizeof(struct Node));
@@ -175,6 +178,7 @@ void add_segment()
 }
 
 // function to input movements of the snake from the user
+
 void input()
 {
     int ch;
@@ -240,6 +244,7 @@ void input()
 }
 
 // function to implement the logic of the game
+
 void logic()
 {
     int prevx = head->x;
@@ -292,9 +297,10 @@ void logic()
     }
 }
 
-/* ----------------------------------------------- functions definations for tic-tac-toe_game ----------------------------------------*/
+/*--------------------------------=--- Tic-Tac-Toe_Game_FUNCTIONS ----------------------------*/
 
 // function to create a 2-D matrix to store tic-tac-toe
+
 int draw(int a[N][N])
 {
     for (int i = 0; i < N; i++)
@@ -311,6 +317,7 @@ int draw(int a[N][N])
 }
 
 // function to display tic-tac-toe in each turn
+
 void display(int a[N][N])
 {
     system("clear");
@@ -358,6 +365,7 @@ void display(int a[N][N])
 }
 
 // function to check win in each row
+
 int check_rows(int array[N][N], int player)
 {
     for (int i = 0; i < N; i++)
@@ -372,6 +380,7 @@ int check_rows(int array[N][N], int player)
 }
 
 // function to check win in each column
+
 int check_columns(int array[N][N], int player)
 {
     for (int i = 0; i < N; i++)
@@ -386,6 +395,7 @@ int check_columns(int array[N][N], int player)
 }
 
 // function to check win in each diagonal
+
 int check_diagonals(int array[N][N], int player)
 {
     if (array[0][0] == array[1][1] && array[1][1] == array[2][2] && array[1][1] == player)
@@ -405,6 +415,7 @@ int check_diagonals(int array[N][N], int player)
 }
 
 // function to check win in either row, column or diagonal
+
 int win(int a[N][N], int player)
 {
     if (check_rows(a, player) || check_columns(a, player) || check_diagonals(a, player))
@@ -416,6 +427,7 @@ int win(int a[N][N], int player)
 }
 
 // function to set move according to player number
+
 int set(int a[N][N], int m, int n, int player)
 {
     a[m][n] = player;
@@ -423,6 +435,7 @@ int set(int a[N][N], int m, int n, int player)
 }
 
 // function to take moves from player turn-wise
+
 int playerMove(int matrix[N][N], int player)
 {
     int m, n;
@@ -458,4 +471,4 @@ int playerMove(int matrix[N][N], int player)
     return 0;
 }
 
-/* -------------------------------------------------------------------------------------------------------------------------------------*/
+/* ------------------------------------------------------------------------------------------*/
