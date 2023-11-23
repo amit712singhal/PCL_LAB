@@ -1,2 +1,2 @@
 # PCL_LAB
-All programs done in PCL Lab + Mini Project 
+Some Programs done in PCL Lab + Mini Project 
