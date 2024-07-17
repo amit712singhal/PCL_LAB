@@ -31,23 +31,23 @@ To compile and run any of the programs, use the following commands:
 
 For Example :-
 
-1. Navigate to the directory containing the program file.
+1. Navigate to the directory containing the program file:
 
-  ```sh
-  cd "Lab 1 (11.11.22)"
-  ```
+   ```sh
+   cd "Lab 1 (11.11.22)"
+   ```
 
 2. Compile the program:
 
-  ```sh
-  gcc exp_1.c -o exp_1
-  ```
+   ```sh
+   gcc exp_1.c -o exp_1
+   ```
 
 3. Run the compiled program:
 
-  ```sh
-  ./exp_1
-  ```
+   ```sh
+   ./exp_1
+   ```
 
 ## License
 
