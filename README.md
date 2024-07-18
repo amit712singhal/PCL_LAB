@@ -9,7 +9,7 @@
 
 ## Introduction
 
-This repository is dedicated to the ES-153 [Programming in 'C' Lab](./PCL_Lab_Syllabus.pdf) course instructed by Dr. Jyoti Kaushik. The course covers various fundamental and advanced concepts of the C programming language, including basic syntax, control structures, functions, arrays, pointers, structures, and file handling.
+This repository is dedicated to the ES-153 [Programming in 'C' Lab](LAB_Syllabus.pdf) course instructed by Dr. Jyoti Kaushik. The course covers various fundamental and advanced concepts of the C programming language, including basic syntax, control structures, functions, arrays, pointers, structures, and file handling.
 
 ## Installation
 
@@ -51,4 +51,4 @@ For Example :-
 
 ## License
 
-This repository is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
+This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
